@@ -78,32 +78,8 @@ p = a && b && (c || d)
 ```
 
 
-$$
-\begin{align*}
-p &= a \and b \and (c \or d) \\
+<a href="https://www.codecogs.com/eqnedit.php?latex=p_a&space;&=&space;p_{a=true}&space;\oplus&space;p_{a=false}&space;\\&space;&=(true&space;\wedge&space;b&space;\wedge&space;(c&space;\vee&space;d))\oplus(false&space;\wedge&space;b&space;\wedge&space;(c&space;\vee&space;d))&space;\\&space;&=&space;(b&space;\wedge&space;(c&space;\vee&space;d))&space;\oplus&space;false&space;\\&space;&=&space;b&space;\wedge&space;(c&space;\vee&space;d)&space;\\&space;p_b&space;&=&space;p_{b=true}&space;\oplus&space;p_{b=false}&space;\\&space;&=&space;(a&space;\wedge&space;true&space;\wedge&space;(c&space;\vee&space;d))&space;\oplus&space;(a&space;\wedge&space;false&space;\wedge&space;(c&space;\vee&space;d))&space;\\&space;&=&space;(a&space;\wedge&space;(c&space;\vee&space;d))&space;\oplus&space;false&space;\\&space;&=&space;a&space;\wedge&space;(c&space;\vee&space;d)&space;\\" target="_blank"><img src="https://latex.codecogs.com/svg.latex?p_a&space;&=&space;p_{a=true}&space;\oplus&space;p_{a=false}&space;\\&space;&=(true&space;\wedge&space;b&space;\wedge&space;(c&space;\vee&space;d))\oplus(false&space;\wedge&space;b&space;\wedge&space;(c&space;\vee&space;d))&space;\\&space;&=&space;(b&space;\wedge&space;(c&space;\vee&space;d))&space;\oplus&space;false&space;\\&space;&=&space;b&space;\wedge&space;(c&space;\vee&space;d)&space;\\&space;p_b&space;&=&space;p_{b=true}&space;\oplus&space;p_{b=false}&space;\\&space;&=&space;(a&space;\wedge&space;true&space;\wedge&space;(c&space;\vee&space;d))&space;\oplus&space;(a&space;\wedge&space;false&space;\wedge&space;(c&space;\vee&space;d))&space;\\&space;&=&space;(a&space;\wedge&space;(c&space;\vee&space;d))&space;\oplus&space;false&space;\\&space;&=&space;a&space;\wedge&space;(c&space;\vee&space;d)&space;\\" title="p_a &= p_{a=true} \oplus p_{a=false} \\ &=(true \wedge b \wedge (c \vee d))\oplus(false \wedge b \wedge (c \vee d)) \\ &= (b \wedge (c \vee d)) \oplus false \\ &= b \wedge (c \vee d) \\ p_b &= p_{b=true} \oplus p_{b=false} \\ &= (a \wedge true \wedge (c \vee d)) \oplus (a \wedge false \wedge (c \vee d)) \\ &= (a \wedge (c \vee d)) \oplus false \\ &= a \wedge (c \vee d) \\" /></a>
 
-p_a &= p_{a=true} \oplus p_{a=false} \\
-&=(true \and b \and (c \or d))\oplus(false \and b \and (c \or d)) \\
-&= (b \and (c \or d)) \oplus false \\
-&= b \and (c \or d) \\
-
-p_b &= p_{b=true} \oplus p_{b=false} \\
-&= (a \and true \and (c \or d)) \oplus (a \and false \and (c \or d)) \\
-&= (a \and (c \or d)) \oplus false \\
-&= a \and (c \or d) \\
-
-p_c &= p_{c=true} \oplus p_{c=false} \\
-&= (a \and b \and (true \or d)) \oplus (a \and b \and (false \or d)) \\
-&= (a \and b) \oplus (a \and b \and d) \\
-&= (a \and b) \oplus d\\
-
-p_d &= p_{d=true} \oplus p_{d=false} \\
-&= (a \and b) \oplus c
-
-
-
-\end{align*} \\
-$$
 
 
 
